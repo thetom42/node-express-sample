@@ -1,0 +1,13 @@
+# Commands to start on workspace startup
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: npm install
+    command: docker-compose up -d
+ports:
+  - port: 3000
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - mtxr.sqltools
+    - mtxr.sqltools-driver-pg
